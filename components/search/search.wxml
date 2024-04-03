@@ -1,0 +1,5 @@
+<view class="search-container">
+  <view class="search-box">
+    <icon class="search-laber" type="search" size="30" color="black"></icon>
+  </view>
+</view>

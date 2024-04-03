@@ -1,0 +1,26 @@
+/* 搜索框的渲染效果 */
+.search-container{
+  height: 50px;
+  background-color: red;
+}
+.search-container .search-box {
+  height: 36px;
+  background-color: white;
+  border-radius: 36rpx;
+}
+
+/* 顶部的分类选择的渲染效果 */
+.classify-choice{
+  display: flex;
+  flex-wrap: wrap;
+}
+.classify-choice .classify-choice-box{
+  width: 20%;
+  height: 160rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.classify-choice text{
+  font-size: 40rpx;
+}

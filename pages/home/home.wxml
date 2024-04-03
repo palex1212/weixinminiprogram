@@ -1,0 +1,44 @@
+<!--轮播图效果-->
+<swiper indicator-dots circular>
+  <swiper-item wx:for="{{2}}" wx:key="id">
+    <image src="/image/tabBar_icon/home.png"></image>
+  </swiper-item>
+</swiper>
+
+<!--主题-->
+<view class="home-container">
+  <view class="home-container-box">
+    <text style="height: 100rpx; display: flex; align-items: center; justify-content: center; font-size: 70rpx; font-weight: bold;">即燃</text>
+    <!--多功能应用-->
+    <view class="mult-function">
+      <!--校园功能-->
+      <view class="campus-function" wx:for="{{4}}" wx:key="id">
+        <image src="/image/home_icon/exam_info.png"></image>
+        <text>考题资料</text>
+      </view>
+      <!--其他功能-->
+      <view class="other-function" wx:for="{{4}}" wx:key="id">
+        <image src="/image/home_icon/secHand_market.png"></image>
+        <text>二手集市</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--楼层结构-->
+<view class="floor-container">
+  <text bind:tap="goto_find_team">找搭子</text>
+  <!--楼层图标-->
+  <view class="floor-img-box">
+    <!--左侧大图片盒子-->
+    <view class="left-img-box">
+      <image src="/image/hot_recommend.jpg" style="width: 310rpx" mode="widthFix"></image>
+    </view>
+    <!--右侧小图片盒子-->
+    <view class="right-img-box">
+      <view class="right-img-item" wx:for="{{4}}" wx:key="i" wx:if="i !== 0">
+        <image src="/image/play.jpg" style="width: 200rpx;" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+</view>

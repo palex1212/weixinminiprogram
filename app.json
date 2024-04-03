@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/student_circle/student_circle",
+    "pages/message/message",
+    "pages/me/me"
+  ],
+  "subpackages": [
+    {
+      "root": "spkg_search",
+      "pages": [
+        "pages/search/search",
+        "pages/find_team/find_team"
+      ]
+    }
+  ],
+  "tabBar": {
+    "list":[{
+      "pagePath":"pages/home/home",
+      "text":"主页",
+      "iconPath": "/image/tabBar_icon/home.png",
+      "selectedIconPath": "/image/tabBar_icon/home-active.png"
+    },
+    {
+      "pagePath":"pages/student_circle/student_circle",
+      "text":"同学圈",
+      "iconPath": "/image/tabBar_icon/std.png",
+      "selectedIconPath": "/image/tabBar_icon/std-active.png"
+    },
+    {
+      "pagePath":"pages/message/message",
+      "text":"消息",
+      "iconPath": "/image/tabBar_icon/message.png",
+      "selectedIconPath": "/image/tabBar_icon/message-active.png"
+    },
+    {
+      "pagePath":"pages/me/me",
+      "text":"我的",
+      "iconPath": "/image/tabBar_icon/me.png",
+      "selectedIconPath": "/image/tabBar_icon/me-active.png"
+    }]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "即燃",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
