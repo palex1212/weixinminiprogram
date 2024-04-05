@@ -5,13 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    topbar: ["游戏", "项目", "作业", "自习"],
+    teams:[],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    this.fetchTeamInfo();
 
   },
 
@@ -62,5 +64,20 @@ Page({
    */
   onShareAppMessage() {
 
-  }
+  },
+
+  // 队伍信息
+    fetchTeamInfo: function() {
+      const teamData = [
+        { name: "Team A", members: ["John", "Alice", "Bob"] },
+        { name: "Team B", members: ["Emma", "David", "Ella"] }
+      ];
+
+      this.setData({teams:teamData});
+    },
+
+     // 动态更新栏位
+
+
+
 })

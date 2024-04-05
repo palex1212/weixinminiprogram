@@ -6,17 +6,24 @@
 </view>
 
 <!--找搭子专场数据-->
-<view>
+<view class="makeFriend">
   <!--顶部的分类选择-->
   <view class="classify-choice">
-    <view class="classify-choice-box" wx:for="{{5}}" wx:key="id">
-      <text>热门</text>
+    <view class="classify-choice-box" wx:for="{{topbar}}" wx:key="index">
+      <text>{{item}}</text>
     </view>
   </view>
   <!--底部的专场数据-->
   <scroll-view class="find-team-data" scroll-y="">
-    <view>zzzz</view>
-    <view>zzzz</view>
-    <view>zzzz</view>
+    <!-- 动态更新队伍信息 -->
+    <view class="team-container" wx:for="{{teams}}" wx:key="name">
+    <view class="team-name">{{item.name}}</view>
+    <view class="team-members">
+      <!-- Display team members -->
+      <view class="member" wx:for="{{item.members}}" wx:key="index">{{item}}</view>
+    </view>
+    </view>
   </scroll-view>
+  <!-- 悬浮栏位 -->
+    <view class="floating">我的队伍</view>
 </view>
